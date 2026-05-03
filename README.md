@@ -37,7 +37,16 @@ And this show that when the __link__ button is used, you can adjust all 3 audio 
 
 ![Context Node](./docs/power_ltx_lora_loader_linked.png)
 
-It all works great for me, but I'm posting if it helps others (as is or as ideas for coding something better), and perhaps to encourage RGthree to include the functionality!
+
+
+## How can you use this? 
+Guess you can git clone this repo and use it as direct replacement for rgthree-comfy in your custom nodes folder.
+
+If you have rgthree settings, you might like to retain your __rgthree_config.json__ in the root folder of this custom node.
+
+I am not interesting in developing and pushing this through manager, and do not want to tread on RGthree\'s toes. Just sharing something I made for myself in case it helps others. Would be great if someone did a better job of it or if RGthree has capacity to add something like this. 
+
+I might have been better to create this as a separate custom node if others want to use it as it is a nuisance to follow a fork of a custom node just for loader like this. But hey, it achieves what I needed so at present - it is what it is!
 
 
 <hr>

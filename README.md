@@ -8,6 +8,36 @@
     <a href="#️-the-nodes">The Nodes</a> &nbsp; | &nbsp; <a href="#-improvements--features">Improvements & Features</a>  &nbsp; | &nbsp; <a href="#-link-fixer">Link Fixer</a>
 </p>
 <hr>
+This is a fork of the invaluable RGthree nodepack, with the addition of a node called **Power LTX Lora Loader**. 
+
+Kijai provides a lora loader for a single lora allowing user to decrease the strength of audio layers in a lora in his [KJNodes](https://github.com/kijai/ComfyUI-KJNodes/tree/main) pack.
+
+Specifically he allows control of
+- "v2a", applies to keys with "video\_to\_audio\_attn"
+- "a2v" "audio\_to\_video_attn" 
+- "aud", applies to keys with "audio\_attn" or "audio\_ff.net"
+- "vid", applies to keys with "attn" or "ff.net" 
+- "other" for everything not caught by above filters
+
+I love the Power Lora loader, and did request the functionality to adjust audio, but thought I would try myself. It was fairly easy to add funcionality to turn audio 'off' but it can help to retain some audio related elements at reduced weight. So... I used Qwen3.6-27B_Q6 running with llama.cpp to backfill my rotten coding skills and help me figure how to get the Kijai's functionality in RGthree's loader'
+
+This only changes to the original nodepack are 
+- /py/power_ltx_lora_loader.py
+- /web/comfyui/power_ltx_lora_loader.js
+
+I also made a 2 line edit in /\_\_init\_\_.py and 1 line in /web/comfyui/constants.js as is necessary so comfyui can see the node.
+
+This is the loader:
+![Context Node](./docs/power_ltx_lora_loader_unlinked.png)
+
+And this show that when the __link__ button is used, you can adjust all 3 audio values simultanously for speed.
+
+![Context Node](./docs/power_ltx_lora_loader_linked.png)
+
+It all works great for me, but I'm posting if it helps others (as is or as ideas for coding something better), and perhaps to encourage RGthree to include the functionality!
+
+
+<hr>
 
 A collection of nodes and improvements created while messing around with ComfyUI. I made them for myself to make my workflow cleaner, easier, and faster. You're welcome to try them out. But remember, I made them for my own use cases :)
 

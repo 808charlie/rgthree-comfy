@@ -8,9 +8,12 @@
     <a href="#️-the-nodes">The Nodes</a> &nbsp; | &nbsp; <a href="#-improvements--features">Improvements & Features</a>  &nbsp; | &nbsp; <a href="#-link-fixer">Link Fixer</a>
 </p>
 <hr>
-This is a fork of the invaluable RGthree nodepack, with the addition of a node called **Power LTX Lora Loader**. 
 
-Kijai provides a lora loader for a single lora allowing user to decrease the strength of audio layers in a lora in his [KJNodes](https://github.com/kijai/ComfyUI-KJNodes/tree/main) pack.
+## fork adding: Power LTX Lora Loader
+
+This is a fork of the invaluable RGthree nodepack, with the addition of a node called __Power LTX Lora Loader__. 
+
+Kijai provides a lora loader for a single lora allowing user to decrease the __strength of audio layers__ in a lora in his [KJNodes](https://github.com/kijai/ComfyUI-KJNodes/tree/main) pack.
 
 Specifically he allows control of
 - "v2a", applies to keys with "video\_to\_audio\_attn"
